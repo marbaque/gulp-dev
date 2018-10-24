@@ -1,4 +1,4 @@
-var themename = 'superpem';
+var themename = 'pemscores';
 
 var gulp = require('gulp'),
 	// Prepare and optimize code etc
@@ -26,7 +26,7 @@ gulp.task('css', function() {
 	return gulp.src(scss + '{style.scss,rtl.scss}')
 	.pipe(sourcemaps.init())
 	.pipe(sass({
-		outputStyle: 'expanded', 
+		outputStyle: 'expanded',
 		indentType: 'tab',
 		indentWidth: '1'
 	}).on('error', sass.logError))
@@ -56,10 +56,10 @@ gulp.task('javascript', function() {
 
 // Watch everything
 gulp.task('watch', function() {
-	browserSync.init({ 
+	browserSync.init({
 		open: 'external',
-		proxy: 'http://localhost/themedev/',
-		port: 8080
+		proxy: 'http://localhost:8888/instituto.dev/',
+		port: 8888
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);
