@@ -26,4 +26,4 @@ browserSync.init({
 
 7. Instale los módulos mediante `npm install`.
 
-8. Digite el comando `gulp`. Debería abrir el
+8. Digite el comando `gulp`. Debería abrir el sitio con browsersync y vigilando cambios.
