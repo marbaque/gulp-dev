@@ -15,6 +15,7 @@ browserSync.init({
 		proxy: 'http://localhost:8888/instituto.dev/',
 		port: 8888
 	});
+```
 
 
 
