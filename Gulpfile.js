@@ -58,7 +58,7 @@ gulp.task('javascript', function() {
 gulp.task('watch', function() {
 	browserSync.init({
 		open: 'external',
-		proxy: 'http://localhost:8888/instituto.dev/',
+		proxy: 'http://academia.test',
 		port: 8888
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
